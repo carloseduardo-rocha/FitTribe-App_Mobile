@@ -66,14 +66,3 @@ Q4:
 - [ ] Lançamento beta
 - [ ] Programa de feedback
 
-## 🤝 Como Contribuir
-
-1. **Reporte Issues**  
-   Encontrou um bug? [Abra uma issue](https://github.com/cadu321r/FitTribe-App_Mobile/issues/new)
-
-2. **Desenvolvimento**  
-```bash
-git clone https://github.com/cadu321r/FitTribe-App_Mobile.git
-cd FitTribe-App_Mobile
-npm install
-npm run dev
