@@ -3,9 +3,7 @@
 ## 👥 Equipe de Desenvolvimento
 
 <table>
-  <!-- Primeira Linha -->
   <tr>
-    <!-- Carlos Eduardo (Você) -->
     <td align="center">
       <a href="https://github.com/cadu321r">
         <img src="https://avatars.githubusercontent.com/u/154270394?v=4" width="100px;" alt="Carlos Eduardo"/>
@@ -16,11 +14,11 @@
       <a href="https://github.com/cadu321r" title="Full Stack">💻</a>
       <a href="#" title="Mobile">📱</a>
     </td>
-    
-    <!-- ArtLevy -->
+
+  <tr>
     <td align="center">
       <a href="https://github.com/ArtLevy">
-        <img src="https://avatars.githubusercontent.com/u/149413155?v=4" width="100px;" alt="Art Levy"/>
+        <img src="https://github.com/ArtLevy.png" width="100px;" alt="Art Levy"/>
         <br />
         <sub><b>Art Levy</b></sub>
       </a>
@@ -28,11 +26,11 @@
       <a href="https://github.com/ArtLevy" title="Code">👨‍💻</a>
       <a href="#" title="Backend">🔙</a>
     </td>
-    
-    <!-- CarlosLevyM -->
+
+  <tr>
     <td align="center">
       <a href="https://github.com/CarlosLevyM">
-        <img src="https://avatars.githubusercontent.com/u/149413155?v=4" width="100px;" alt="Carlos Levy"/>
+        <img src="https://github.com/CarlosLevyM.png" width="100px;" alt="Carlos Levy"/>
         <br />
         <sub><b>Carlos Levy</b></sub>
       </a>
@@ -42,12 +40,10 @@
     </td>
   </tr>
   
-  <!-- Segunda Linha -->
   <tr>
-    <!-- NETOooliveira -->
     <td align="center">
       <a href="https://github.com/NETOooliveira">
-        <img src="https://avatars.githubusercontent.com/u/149413155?v=4" width="100px;" alt="Neto Oliveira"/>
+        <img src="https://github.com/NETOooliveira.png" width="100px;" alt="Neto Oliveira"/>
         <br />
         <sub><b>Neto Oliveira</b></sub>
       </a>
@@ -55,11 +51,11 @@
       <a href="https://github.com/NETOooliveira" title="QA">🧪</a>
       <a href="#" title="Testing">🔍</a>
     </td>
-    
-    <!-- UlissesBernardo -->
+
+  <tr>
     <td align="center">
       <a href="https://github.com/UlissesBernardo">
-        <img src="https://avatars.githubusercontent.com/u/149413155?v=4" width="100px;" alt="Ulisses Bernardo"/>
+        <img src="https://github.com/UlissesBernardo.png" width="100px;" alt="Ulisses Bernardo"/>
         <br />
         <sub><b>Ulisses Bernardo</b></sub>
       </a>
@@ -67,17 +63,18 @@
       <a href="https://github.com/UlissesBernardo" title="DevOps">🚀</a>
       <a href="#" title="Database">🗄️</a>
     </td>
-    
-    <!-- Espaço para novo membro -->
+
+  <tr>
     <td align="center">
       <a href="#">
-        <img src="https://via.placeholder.com/100?text=Novo+Membro" width="100px;" alt="Novo Membro"/>
+        <img src="https://via.placeholder.com/100?text=+" width="100px;" alt="Novo Membro" style="background:#1E3A8A;color:white;border-radius:50%"/>
         <br />
-        <sub><b>Seu Nome Aqui</b></sub>
+        <sub><b>Novo Membro</b></sub>
       </a>
     </td>
   </tr>
 </table>
+
 
 ## ✨ Visão Geral
 
