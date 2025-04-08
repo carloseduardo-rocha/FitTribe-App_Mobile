@@ -60,30 +60,10 @@ Aplicação móvel completa para criação, organização e participação em ev
 |--------|-----------|--------|
 | **Autenticação** | Cadastro seguro e login com múltiplos fatores | ✔️ Implementado |
 | **Mapa Interativo** | Visualização geográfica com filtros por modalidade | 🚧 Em desenvolvimento |
-| **Gestão de Eventos** | Criação, edição e participação em eventos | ✔️ Implementado |
+| **Gestão de Eventos** | Criação, edição e participação em eventos | 🚧 Em desenvolvimento |
 
 ### Diferenciais
 - 🌦️ Integração com previsão do tempo
 - 🏆 Sistema de conquistas e histórico
 - 🔄 Reutilização de configurações de eventos
 - 📱 Design responsivo para mobile
-  
-
-## 📌 Roadmap 2024
-
-Q1:
-- [x] Arquitetura inicial
-- [x] Módulo de autenticação
-
-Q2:
-- [ ] Mapa interativo (em progresso)
-- [ ] Sistema de chat
-
-Q3:
-- [ ] Integração com APIs de clima
-- [ ] Testes de carga
-
-Q4:
-- [ ] Lançamento beta
-- [ ] Programa de feedback
-
