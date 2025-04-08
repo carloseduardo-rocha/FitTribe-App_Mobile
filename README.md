@@ -2,24 +2,35 @@
 
 ## 👥 Equipe de Desenvolvimento
 
-<div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin: 20px 0; text-align: center;">
+<div align="center">
 
-<div style="background: #f5f5f5; border-radius: 10px; padding: 15px; width: 150px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <p style="font-weight: bold; color: #1E3A8A; margin: 0; font-size: 16px;">Art Levy</p>
-  <p style="color: #666; margin: 5px 0 0; font-size: 14px;">Desenvolvedor</p>
+<a href="https://github.com/cadu321r">
+  <img src="https://avatars.githubusercontent.com/u/154270394?v=4" width="80" style="border-radius:50%"><br>
+  <img src="https://img.shields.io/static/v1?label=&message=Carlos%20Eduardo&color=1E3A8A&style=for-the-badge&logo=github">
+</a>
+
+<a href="https://github.com/ArtLevy">
+  <img src="https://github.com/ArtLevy.png" width="80" style="border-radius:50%"><br>
+  <img src="https://img.shields.io/static/v1?label=&message=Art%20Levy&color=1E3A8A&style=for-the-badge&logo=github">
+</a>
+
+<a href="https://github.com/CarlosLevyM">
+  <img src="https://github.com/CarlosLevyM.png" width="80" style="border-radius:50%"><br>
+  <img src="https://img.shields.io/static/v1?label=&message=Carlos%20Levy&color=1E3A8A&style=for-the-badge&logo=github">
+</a>
+
+<a href="https://github.com/NETOooliveira">
+  <img src="https://github.com/NETOooliveira.png" width="80" style="border-radius:50%"><br>
+  <img src="https://img.shields.io/static/v1?label=&message=Neto%20Oliveira&color=1E3A8A&style=for-the-badge&logo=github">
+</a>
+
+<a href="https://github.com/UlissesBernardo">
+  <img src="https://github.com/UlissesBernardo.png" width="80" style="border-radius:50%"><br>
+  <img src="https://img.shields.io/static/v1?label=&message=Ulisses%20Bernardo&color=1E3A8A&style=for-the-badge&logo=github">
+</a>
+
 </div>
 
-<div style="background: #f5f5f5; border-radius: 10px; padding: 15px; width: 150px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <p style="font-weight: bold; color: #1E3A8A; margin: 0; font-size: 16px;">Carlos Levy</p>
-  <p style="color: #666; margin: 5px 0 0; font-size: 14px;">Front-end</p>
-</div>
-
-<div style="background: #f5f5f5; border-radius: 10px; padding: 15px; width: 150px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <p style="font-weight: bold; color: #1E3A8A; margin: 0; font-size: 16px;">Neto Oliveira</p>
-  <p style="color: #666; margin: 5px 0 0; font-size: 14px;">QA</p>
-</div>
-
-</div>
 ## ✨ Visão Geral
 
 Aplicação móvel completa para criação, organização e participação em eventos esportivos, com foco especial em corrida e ciclismo. Integra:
