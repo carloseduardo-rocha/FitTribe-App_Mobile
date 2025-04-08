@@ -2,23 +2,67 @@
 
 ## 👥 Equipe de Desenvolvimento
 
-<div align="center" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin: 20px 0;">
+<div align="center" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin: 30px 0;">
 
-[![Carlos Eduardo](https://img.shields.io/static/v1?label=&message=Carlos%20Eduardo&color=1E3A8A&style=for-the-badge&logo=github)](https://github.com/cadu321r)
-[![Art Levy](https://img.shields.io/static/v1?label=&message=Art%20Levy&color=1E3A8A&style=for-the-badge&logo=github)](https://github.com/ArtLevy)
-[![Carlos Levy](https://img.shields.io/static/v1?label=&message=Carlos%20Levy&color=1E3A8A&style=for-the-badge&logo=github)](https://github.com/CarlosLevyM)
-[![Neto Oliveira](https://img.shields.io/static/v1?label=&message=Neto%20Oliveira&color=1E3A8A&style=for-the-badge&logo=github)](https://github.com/NETOooliveira)
-[![Ulisses Bernardo](https://img.shields.io/static/v1?label=&message=Ulisses%20Bernardo&color=1E3A8A&style=for-the-badge&logo=github)](https://github.com/UlissesBernardo)
-
+<!-- Card 1 - Carlos Eduardo -->
+<div style="text-align: center; padding: 15px; border-radius: 10px; background: #f8f9fa; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 140px;">
+  <a href="https://github.com/cadu321r">
+    <img src="https://avatars.githubusercontent.com/u/154270394?v=4" width="80" style="border-radius:50%; border: 2px solid #1E3A8A"/>
+  </a>
+  <h4 style="margin: 10px 0 5px; color: #1E3A8A">Carlos Eduardo</h4>
+  <div style="font-size: 14px;">
+    <span title="Full Stack">💻</span> • 
+    <span title="Mobile">📱</span>
+  </div>
 </div>
 
-<div align="center" style="display: flex; justify-content: center; gap: 50px; margin-top: 10px;">
+<!-- Card 2 - Art Levy -->
+<div style="text-align: center; padding: 15px; border-radius: 10px; background: #f8f9fa; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 140px;">
+  <a href="https://github.com/ArtLevy">
+    <img src="https://github.com/ArtLevy.png" width="80" style="border-radius:50%; border: 2px solid #1E3A8A"/>
+  </a>
+  <h4 style="margin: 10px 0 5px; color: #1E3A8A">Art Levy</h4>
+  <div style="font-size: 14px;">
+    <span title="Backend">🔙</span> • 
+    <span title="Code">👨‍💻</span>
+  </div>
+</div>
 
-[<img src="https://avatars.githubusercontent.com/u/154270394?v=4" width="80" style="border-radius:50%" alt="Carlos Eduardo"/>](https://github.com/cadu321r)
-[<img src="https://github.com/ArtLevy.png" width="80" style="border-radius:50%" alt="Art Levy"/>](https://github.com/ArtLevy)
-[<img src="https://github.com/CarlosLevyM.png" width="80" style="border-radius:50%" alt="Carlos Levy"/>](https://github.com/CarlosLevyM)
-[<img src="https://github.com/NETOooliveira.png" width="80" style="border-radius:50%" alt="Neto Oliveira"/>](https://github.com/NETOooliveira)
-[<img src="https://github.com/UlissesBernardo.png" width="80" style="border-radius:50%" alt="Ulisses Bernardo"/>](https://github.com/UlissesBernardo)
+<!-- Card 3 - Carlos Levy -->
+<div style="text-align: center; padding: 15px; border-radius: 10px; background: #f8f9fa; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 140px;">
+  <a href="https://github.com/CarlosLevyM">
+    <img src="https://github.com/CarlosLevyM.png" width="80" style="border-radius:50%; border: 2px solid #1E3A8A"/>
+  </a>
+  <h4 style="margin: 10px 0 5px; color: #1E3A8A">Carlos Levy</h4>
+  <div style="font-size: 14px;">
+    <span title="Frontend">🖥️</span> • 
+    <span title="UI/UX">🎨</span>
+  </div>
+</div>
+
+<!-- Card 4 - Neto Oliveira -->
+<div style="text-align: center; padding: 15px; border-radius: 10px; background: #f8f9fa; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 140px;">
+  <a href="https://github.com/NETOooliveira">
+    <img src="https://github.com/NETOooliveira.png" width="80" style="border-radius:50%; border: 2px solid #1E3A8A"/>
+  </a>
+  <h4 style="margin: 10px 0 5px; color: #1E3A8A">Neto Oliveira</h4>
+  <div style="font-size: 14px;">
+    <span title="QA">🧪</span> • 
+    <span title="Testing">🔍</span>
+  </div>
+</div>
+
+<!-- Card 5 - Ulisses Bernardo -->
+<div style="text-align: center; padding: 15px; border-radius: 10px; background: #f8f9fa; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 140px;">
+  <a href="https://github.com/UlissesBernardo">
+    <img src="https://github.com/UlissesBernardo.png" width="80" style="border-radius:50%; border: 2px solid #1E3A8A"/>
+  </a>
+  <h4 style="margin: 10px 0 5px; color: #1E3A8A">Ulisses Bernardo</h4>
+  <div style="font-size: 14px;">
+    <span title="DevOps">🚀</span> • 
+    <span title="Database">🗄️</span>
+  </div>
+</div>
 
 </div>
 
