@@ -2,67 +2,23 @@
 
 ## 👥 Equipe de Desenvolvimento
 
-<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin: 20px 0;">
+<div align="center" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin: 20px 0;">
 
-  <!-- Carlos Eduardo (Você) -->
-  <div style="text-align: center;">
-    <a href="https://github.com/cadu321r">
-      <img src="https://avatars.githubusercontent.com/u/154270394?v=4" width="100px;" alt="Carlos Eduardo" style="border-radius: 50%;"/>
-      <br />
-      <sub><b>Carlos Eduardo</b></sub>
-    </a>
-    <br />
-    <span title="Full Stack">💻</span>
-    <span title="Mobile">📱</span>
-  </div>
+[![Carlos Eduardo](https://img.shields.io/static/v1?label=&message=Carlos%20Eduardo&color=1E3A8A&style=for-the-badge&logo=github)](https://github.com/cadu321r)
+[![Art Levy](https://img.shields.io/static/v1?label=&message=Art%20Levy&color=1E3A8A&style=for-the-badge&logo=github)](https://github.com/ArtLevy)
+[![Carlos Levy](https://img.shields.io/static/v1?label=&message=Carlos%20Levy&color=1E3A8A&style=for-the-badge&logo=github)](https://github.com/CarlosLevyM)
+[![Neto Oliveira](https://img.shields.io/static/v1?label=&message=Neto%20Oliveira&color=1E3A8A&style=for-the-badge&logo=github)](https://github.com/NETOooliveira)
+[![Ulisses Bernardo](https://img.shields.io/static/v1?label=&message=Ulisses%20Bernardo&color=1E3A8A&style=for-the-badge&logo=github)](https://github.com/UlissesBernardo)
 
-  <!-- ArtLevy -->
-  <div style="text-align: center;">
-    <a href="https://github.com/ArtLevy">
-      <img src="https://github.com/ArtLevy.png" width="100px;" alt="Art Levy" style="border-radius: 50%;"/>
-      <br />
-      <sub><b>Art Levy</b></sub>
-    </a>
-    <br />
-    <span title="Code">👨‍💻</span>
-    <span title="Backend">🔙</span>
-  </div>
+</div>
 
-  <!-- CarlosLevyM -->
-  <div style="text-align: center;">
-    <a href="https://github.com/CarlosLevyM">
-      <img src="https://github.com/CarlosLevyM.png" width="100px;" alt="Carlos Levy" style="border-radius: 50%;"/>
-      <br />
-      <sub><b>Carlos Levy</b></sub>
-    </a>
-    <br />
-    <span title="Frontend">🖥️</span>
-    <span title="UI/UX">🎨</span>
-  </div>
+<div align="center" style="display: flex; justify-content: center; gap: 50px; margin-top: 10px;">
 
-  <!-- NETOooliveira -->
-  <div style="text-align: center;">
-    <a href="https://github.com/NETOooliveira">
-      <img src="https://github.com/NETOooliveira.png" width="100px;" alt="Neto Oliveira" style="border-radius: 50%;"/>
-      <br />
-      <sub><b>Neto Oliveira</b></sub>
-    </a>
-    <br />
-    <span title="QA">🧪</span>
-    <span title="Testing">🔍</span>
-  </div>
-
-  <!-- UlissesBernardo -->
-  <div style="text-align: center;">
-    <a href="https://github.com/UlissesBernardo">
-      <img src="https://github.com/UlissesBernardo.png" width="100px;" alt="Ulisses Bernardo" style="border-radius: 50%;"/>
-      <br />
-      <sub><b>Ulisses Bernardo</b></sub>
-    </a>
-    <br />
-    <span title="DevOps">🚀</span>
-    <span title="Database">🗄️</span>
-  </div>
+[<img src="https://avatars.githubusercontent.com/u/154270394?v=4" width="80" style="border-radius:50%" alt="Carlos Eduardo"/>](https://github.com/cadu321r)
+[<img src="https://github.com/ArtLevy.png" width="80" style="border-radius:50%" alt="Art Levy"/>](https://github.com/ArtLevy)
+[<img src="https://github.com/CarlosLevyM.png" width="80" style="border-radius:50%" alt="Carlos Levy"/>](https://github.com/CarlosLevyM)
+[<img src="https://github.com/NETOooliveira.png" width="80" style="border-radius:50%" alt="Neto Oliveira"/>](https://github.com/NETOooliveira)
+[<img src="https://github.com/UlissesBernardo.png" width="80" style="border-radius:50%" alt="Ulisses Bernardo"/>](https://github.com/UlissesBernardo)
 
 </div>
 
