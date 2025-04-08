@@ -1,11 +1,18 @@
 # FitTribe - Aplicativo Mobile para Eventos Esportivos
 
-[![MIT License](https://img.shields.io/github/license/cadu321r/FitTribe-App_Mobile?style=flat-square)](https://github.com/cadu321r/FitTribe-App_Mobile/blob/main/LICENSE)
-[![Last Commit](https://img.shields.io/github/last-commit/cadu321r/FitTribe-App_Mobile?style=flat-square)](https://github.com/cadu321r/FitTribe-App_Mobile/commits/main)
-[![Repo Size](https://img.shields.io/github/repo-size/cadu321r/FitTribe-App_Mobile?style=flat-square)](https://github.com/cadu321r/FitTribe-App_Mobile)
-[![Open Issues](https://img.shields.io/github/issues-raw/cadu321r/FitTribe-App_Mobile?style=flat-square)](https://github.com/cadu321r/FitTribe-App_Mobile/issues)
-
-![Banner do Projeto](https://via.placeholder.com/1200x400/2D3748/FFFFFF?text=FitTribe+-+Eventos+Esportivos)
+  <!-- Linha 1 -->
+  <tr>
+    <!-- Desenvolvedor 1 -->
+    <td align="center">
+      <a href="https://github.com/cadu321r">
+        <img src="https://avatars.githubusercontent.com/u/154270394?v=4" width="100px;" alt="Carlos Eduardo" style="border-radius: 50%;"/>
+        <br />
+        <sub><b>Carlos Eduardo</b></sub>
+      </a>
+      <br />
+      <a href="https://github.com/cadu321r" title="Code">💻</a>
+      <a href="#" title="Design">🎨</a>
+    </td>
 
 ## ✨ Visão Geral
 
