@@ -2,79 +2,69 @@
 
 ## 👥 Equipe de Desenvolvimento
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/cadu321r">
-        <img src="https://avatars.githubusercontent.com/u/154270394?v=4" width="100px;" alt="Carlos Eduardo"/>
-        <br />
-        <sub><b>Carlos Eduardo</b></sub>
-      </a>
-      <br />
-      <a href="https://github.com/cadu321r" title="Full Stack">💻</a>
-      <a href="#" title="Mobile">📱</a>
-    </td>
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin: 20px 0;">
 
-  <tr>
-    <td align="center">
-      <a href="https://github.com/ArtLevy">
-        <img src="https://github.com/ArtLevy.png" width="100px;" alt="Art Levy"/>
-        <br />
-        <sub><b>Art Levy</b></sub>
-      </a>
+  <!-- Carlos Eduardo (Você) -->
+  <div style="text-align: center;">
+    <a href="https://github.com/cadu321r">
+      <img src="https://avatars.githubusercontent.com/u/154270394?v=4" width="100px;" alt="Carlos Eduardo" style="border-radius: 50%;"/>
       <br />
-      <a href="https://github.com/ArtLevy" title="Code">👨‍💻</a>
-      <a href="#" title="Backend">🔙</a>
-    </td>
+      <sub><b>Carlos Eduardo</b></sub>
+    </a>
+    <br />
+    <span title="Full Stack">💻</span>
+    <span title="Mobile">📱</span>
+  </div>
 
-  <tr>
-    <td align="center">
-      <a href="https://github.com/CarlosLevyM">
-        <img src="https://github.com/CarlosLevyM.png" width="100px;" alt="Carlos Levy"/>
-        <br />
-        <sub><b>Carlos Levy</b></sub>
-      </a>
+  <!-- ArtLevy -->
+  <div style="text-align: center;">
+    <a href="https://github.com/ArtLevy">
+      <img src="https://github.com/ArtLevy.png" width="100px;" alt="Art Levy" style="border-radius: 50%;"/>
       <br />
-      <a href="https://github.com/CarlosLevyM" title="Frontend">🖥️</a>
-      <a href="#" title="UI/UX">🎨</a>
-    </td>
-  </tr>
-  
-  <tr>
-    <td align="center">
-      <a href="https://github.com/NETOooliveira">
-        <img src="https://github.com/NETOooliveira.png" width="100px;" alt="Neto Oliveira"/>
-        <br />
-        <sub><b>Neto Oliveira</b></sub>
-      </a>
+      <sub><b>Art Levy</b></sub>
+    </a>
+    <br />
+    <span title="Code">👨‍💻</span>
+    <span title="Backend">🔙</span>
+  </div>
+
+  <!-- CarlosLevyM -->
+  <div style="text-align: center;">
+    <a href="https://github.com/CarlosLevyM">
+      <img src="https://github.com/CarlosLevyM.png" width="100px;" alt="Carlos Levy" style="border-radius: 50%;"/>
       <br />
-      <a href="https://github.com/NETOooliveira" title="QA">🧪</a>
-      <a href="#" title="Testing">🔍</a>
-    </td>
+      <sub><b>Carlos Levy</b></sub>
+    </a>
+    <br />
+    <span title="Frontend">🖥️</span>
+    <span title="UI/UX">🎨</span>
+  </div>
 
-  <tr>
-    <td align="center">
-      <a href="https://github.com/UlissesBernardo">
-        <img src="https://github.com/UlissesBernardo.png" width="100px;" alt="Ulisses Bernardo"/>
-        <br />
-        <sub><b>Ulisses Bernardo</b></sub>
-      </a>
+  <!-- NETOooliveira -->
+  <div style="text-align: center;">
+    <a href="https://github.com/NETOooliveira">
+      <img src="https://github.com/NETOooliveira.png" width="100px;" alt="Neto Oliveira" style="border-radius: 50%;"/>
       <br />
-      <a href="https://github.com/UlissesBernardo" title="DevOps">🚀</a>
-      <a href="#" title="Database">🗄️</a>
-    </td>
+      <sub><b>Neto Oliveira</b></sub>
+    </a>
+    <br />
+    <span title="QA">🧪</span>
+    <span title="Testing">🔍</span>
+  </div>
 
-  <tr>
-    <td align="center">
-      <a href="#">
-        <img src="https://via.placeholder.com/100?text=+" width="100px;" alt="Novo Membro" style="background:#1E3A8A;color:white;border-radius:50%"/>
-        <br />
-        <sub><b>Novo Membro</b></sub>
-      </a>
-    </td>
-  </tr>
-</table>
+  <!-- UlissesBernardo -->
+  <div style="text-align: center;">
+    <a href="https://github.com/UlissesBernardo">
+      <img src="https://github.com/UlissesBernardo.png" width="100px;" alt="Ulisses Bernardo" style="border-radius: 50%;"/>
+      <br />
+      <sub><b>Ulisses Bernardo</b></sub>
+    </a>
+    <br />
+    <span title="DevOps">🚀</span>
+    <span title="Database">🗄️</span>
+  </div>
 
+</div>
 
 ## ✨ Visão Geral
 
