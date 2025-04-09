@@ -26,8 +26,8 @@
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/NETOooliveira">
-        <img src="https://github.com/NETOooliveira.png" width="100px;" alt="Neto Oliveira"/>
+      <a href="https://github.com/oliveriraneto">
+        <img src="https://github.com/oliveriraneto.png" width="100px;" alt="Neto Oliveira"/>
         <br />
         <img src="https://img.shields.io/static/v1?label=&message=Neto%20Oliveira&color=1E3A8A&style=for-the-badge&logo=github"/>
       </a>
