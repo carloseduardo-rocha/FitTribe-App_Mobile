@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/cadu321r/FitTribe-App_Mobile/assets/LOGO_AQUI" alt="FitTribe Logo" width="300"/>
+  <img src="https://github.com/cadu321r/FitTribe-App_Mobile/assets/157944272/9fdc7613-224e-4d3f-a928-6e3d6a68fc58" alt="FitTribe Logo" width="300"/>
 </p>
 
 # FitTribe - Aplicativo Mobile para Eventos Esportivos
@@ -46,16 +46,22 @@
   </tr>
 </table>
 
-
+---
 
 ## ✨ Visão Geral
 
-Aplicação móvel completa para criação, organização e participação em eventos esportivos, com foco especial em corrida e ciclismo. Integra:
+O **FitTribe** é um aplicativo mobile moderno e intuitivo para **organização e participação em eventos esportivos**, com ênfase em modalidades como **corrida e ciclismo**. Nossa missão é **conectar atletas e entusiastas** do esporte em um ambiente digital acessível, funcional e seguro.
 
-- 🗺️ Mapas interativos inteligentes
-- 💬 Sistema de comunicação integrado
-- 📅 Gestão completa de eventos
-- ⚡ Autenticação segura
+### Principais diferenciais:
+- 🗺️ **Mapas interativos com filtros por modalidade**
+- 💬 **Sistema de comunicação entre usuários**
+- 📅 **Gestão completa de eventos**
+- ⚡ **Autenticação segura com múltiplos fatores**
+- 📊 **Histórico e conquistas esportivas**
+- 🌦️ **Integração com previsão do tempo**
+- 🔄 **Reutilização de configurações de eventos anteriores**
+
+---
 
 ## 🚀 Funcionalidades Principais
 
@@ -66,8 +72,34 @@ Aplicação móvel completa para criação, organização e participação em ev
 | **Mapa Interativo** | Visualização geográfica com filtros por modalidade | 🚧 Em desenvolvimento |
 | **Gestão de Eventos** | Criação, edição e participação em eventos | 🚧 Em desenvolvimento |
 
-### Diferenciais
-- 🌦️ Integração com previsão do tempo
-- 🏆 Sistema de conquistas e histórico
-- 🔄 Reutilização de configurações de eventos
-- 📱 Design responsivo para mobile
+---
+
+## 📋 Requisitos
+
+### ✅ Requisitos Funcionais
+- RF01: Permitir o cadastro e login de usuários.
+- RF02: Permitir a criação de eventos esportivos.
+- RF03: Exibir eventos em mapa com filtros de modalidade.
+- RF04: Notificar usuários sobre eventos próximos.
+- RF05: Permitir chat entre participantes de um evento.
+- RF06: Exibir histórico de participação do usuário.
+- RF07: Permitir o cancelamento de eventos por criadores.
+- RF08: Exibir conquistas e estatísticas esportivas.
+
+### ❌ Requisitos Não Funcionais
+- RNF01: A aplicação deve ser responsiva para dispositivos móveis.
+- RNF02: O tempo de resposta do sistema deve ser inferior a 2 segundos.
+- RNF03: O sistema deve estar disponível 99% do tempo.
+- RNF04: Os dados dos usuários devem ser armazenados com criptografia.
+- RNF05: Integração com APIs externas deve ser segura e validada.
+- RNF06: O layout deve ser acessível e intuitivo.
+
+---
+
+## 📱 Tecnologias Utilizadas
+- React Native
+- Firebase Auth
+- Firebase Firestore
+- Expo
+- Mapbox
+- Node.js (backend futuro)
