@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/cadu321r/FitTribe-App_Mobile/assets/LOGO_AQUI" alt="FitTribe Logo" width="300"/>
+</p>
+
 # FitTribe - Aplicativo Mobile para Eventos Esportivos
 
 ## 👥 Equipe de Desenvolvimento
