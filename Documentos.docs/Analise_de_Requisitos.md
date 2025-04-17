@@ -27,9 +27,9 @@ Este documento detalha os requisitos do aplicativo **FitTribe**, oferecendo aos 
 
 ### 📋 Visão Geral do Documento
 
-&nbsp;&nbsp;&nbsp;• **Seção 2**: Descrição geral do sistema  
-&nbsp;&nbsp;&nbsp;• **Seção 3**: Requisitos funcionais (casos de uso)  
-&nbsp;&nbsp;&nbsp;• **Seção 4**: Requisitos não funcionais  
+&nbsp;&nbsp;• **Seção 2**: Descrição geral do sistema  
+&nbsp;&nbsp;• **Seção 3**: Requisitos funcionais (casos de uso)  
+&nbsp;&nbsp;• **Seção 4**: Requisitos não funcionais  
 
 ---
 
