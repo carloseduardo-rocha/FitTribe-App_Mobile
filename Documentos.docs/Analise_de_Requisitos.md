@@ -27,9 +27,9 @@ Este documento detalha os requisitos do aplicativo **FitTribe**, oferecendo aos 
 
 ### 📋 Visão Geral do Documento
 
-&nbsp;&nbsp;• **Seção 2**: Descrição geral do sistema  
-&nbsp;&nbsp;• **Seção 3**: Requisitos funcionais (casos de uso)  
-&nbsp;&nbsp;• **Seção 4**: Requisitos não funcionais  
+&nbsp;• **Seção 2**: Descrição geral do sistema  
+&nbsp;• **Seção 3**: Requisitos funcionais (casos de uso)  
+&nbsp;• **Seção 4**: Requisitos não funcionais  
 
 ---
 
@@ -37,9 +37,9 @@ Este documento detalha os requisitos do aplicativo **FitTribe**, oferecendo aos 
 
 O aplicativo FitTribe oferece uma solução moderna para organização de eventos esportivos como corridas e ciclismo. Destaques:
 
-&nbsp;&nbsp;&nbsp;&nbsp;• 🗺️ Mapa com rota e localização em tempo real  
-&nbsp;&nbsp;&nbsp;&nbsp;• 💬 Comunicação direta entre participantes e organizadores  
-&nbsp;&nbsp;&nbsp;&nbsp;• 🤝 Facilitação de encontros e conexões esportivas  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• 🗺️ Mapa com rota e localização em tempo real  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• 💬 Comunicação direta entre participantes e organizadores  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• 🤝 Facilitação de encontros e conexões esportivas  
 
 ---
 
