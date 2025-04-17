@@ -1,4 +1,3 @@
-<!-- Centraliza e exibe a logo -->
 <p align="center">
   <img src="FitTribe-logo-Img.png" alt="Logo do Projeto FitTribe" width="250"/>
 </p>
@@ -28,9 +27,9 @@ Este documento detalha os requisitos do aplicativo **FitTribe**, oferecendo aos 
 
 ### 📋 Visão Geral do Documento
 
-- **Seção 2**: Descrição geral do sistema  
-- **Seção 3**: Requisitos funcionais (casos de uso)  
-- **Seção 4**: Requisitos não funcionais  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Seção 2**: Descrição geral do sistema  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Seção 3**: Requisitos funcionais (casos de uso)  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Seção 4**: Requisitos não funcionais  
 
 ---
 
@@ -38,68 +37,68 @@ Este documento detalha os requisitos do aplicativo **FitTribe**, oferecendo aos 
 
 O aplicativo FitTribe oferece uma solução moderna para organização de eventos esportivos como corridas e ciclismo. Destaques:
 
-- 🗺️ Mapa com rota e localização em tempo real  
-- 💬 Comunicação direta entre participantes e organizadores  
-- 🤝 Facilitação de encontros e conexões esportivas
+&nbsp;&nbsp;&nbsp;&nbsp;• 🗺️ Mapa com rota e localização em tempo real  
+&nbsp;&nbsp;&nbsp;&nbsp;• 💬 Comunicação direta entre participantes e organizadores  
+&nbsp;&nbsp;&nbsp;&nbsp;• 🤝 Facilitação de encontros e conexões esportivas  
 
 ---
 
 ## ✅ Requisitos Funcionais
 
 ### 🔐 Cadastro & Autenticação
-- Cadastro de usuário ☑️  
-- Login ☑️
+&nbsp;&nbsp;&nbsp;&nbsp;• Cadastro de usuário ☑️  
+&nbsp;&nbsp;&nbsp;&nbsp;• Login ☑️  
 
 ### 🧠 Histórico e Reutilização
-- Histórico do usuário 🔶  
-- Reutilização de eventos 🟢
+&nbsp;&nbsp;&nbsp;&nbsp;• Histórico do usuário 🔶  
+&nbsp;&nbsp;&nbsp;&nbsp;• Reutilização de eventos 🟢  
 
 ### 🗺️ Mapa e Modalidades
-- Mapa Interativo ☑️  
-- Filtro por modalidade (Corrida, Ciclismo, Geral) ☑️
+&nbsp;&nbsp;&nbsp;&nbsp;• Mapa Interativo ☑️  
+&nbsp;&nbsp;&nbsp;&nbsp;• Filtro por modalidade (Corrida, Ciclismo, Geral) ☑️  
 
 ### 💬 Comunicação
-- Chat em grupo ☑️  
-- Chat privado ☑️
+&nbsp;&nbsp;&nbsp;&nbsp;• Chat em grupo ☑️  
+&nbsp;&nbsp;&nbsp;&nbsp;• Chat privado ☑️  
 
 ### 📅 Eventos e Calendário
-- Criação e gerenciamento de eventos ☑️  
-- Calendário de eventos 🔶  
+&nbsp;&nbsp;&nbsp;&nbsp;• Criação e gerenciamento de eventos ☑️  
+&nbsp;&nbsp;&nbsp;&nbsp;• Calendário de eventos 🔶  
 
 ### 🌦️ Clima
-- Exibição das condições climáticas ☑️  
+&nbsp;&nbsp;&nbsp;&nbsp;• Exibição das condições climáticas ☑️  
 
 ---
 
 ## 🚧 Requisitos Não Funcionais
 
-| Requisito                  | Descrição |
-|---------------------------|-----------|
-| Segurança                 | Conformidade com LGPD |
-| Suporte                   | Atendimento técnico |
-| Termo de uso              | Regras de utilização |
-| Licença                   | Uso sem transferência de propriedade |
-| Desempenho                | Alta performance, atualizações frequentes |
-| Mobile                    | Compatível com Android/iOS |
-| Disponibilidade           | 99% de uptime durante eventos |
-| Privacidade de Dados      | Retenção de localização por até 6 meses, com consentimento e exportação |
+| Requisito              | Descrição                                            |
+|------------------------|------------------------------------------------------|
+| Segurança              | Conformidade com LGPD                               |
+| Suporte                | Atendimento técnico                                 |
+| Termo de uso           | Regras de utilização                                |
+| Licença                | Uso sem transferência de propriedade                |
+| Desempenho             | Alta performance, atualizações frequentes           |
+| Mobile                 | Compatível com Android/iOS                          |
+| Disponibilidade        | 99% de uptime durante eventos                       |
+| Privacidade de Dados   | Retenção de localização por até 6 meses, com consentimento e exportação |
 
 ---
 
 ## 🗣️ Entrevistas - Insights de Usuários
 
-| Pergunta | Respostas |
-|---------|-----------|
-| Organização para eventos? | Planejamento, site, amigos |
-| Imprevistos? | WhatsApp, ligações |
-| Apps de localização? | Google Maps |
-| Motivações? | Socialização, saúde |
-| Interesse em produtos esportivos? | Sim |
-| Desejo por chat com usuários? | Sim ou Não |
-| Dicas de nutrição/saúde? | Sim ou Não |
-| Estética desejada? | Simples e colorida |
-| Desejo por mapa? | Sim |
-| Funcionalidades extras? | Marcação de KM, dicas de performance, player de música |
+| Pergunta                        | Respostas                                             |
+|--------------------------------|--------------------------------------------------------|
+| Organização para eventos?      | Planejamento, site, amigos                            |
+| Imprevistos?                   | WhatsApp, ligações                                   |
+| Apps de localização?           | Google Maps                                          |
+| Motivações?                    | Socialização, saúde                                  |
+| Interesse em produtos?         | Sim                                                  |
+| Desejo por chat com usuários?  | Sim ou Não                                           |
+| Dicas de nutrição/saúde?       | Sim ou Não                                           |
+| Estética desejada?             | Simples e colorida                                   |
+| Desejo por mapa?               | Sim                                                  |
+| Funcionalidades extras?        | Marcação de KM, dicas de performance, player de música |
 
 ---
 
