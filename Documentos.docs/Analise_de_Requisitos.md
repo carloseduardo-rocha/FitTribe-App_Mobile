@@ -27,9 +27,9 @@ Este documento detalha os requisitos do aplicativo **FitTribe**, oferecendo aos 
 
 ### 📋 Visão Geral do Documento
 
-&nbsp;• **Seção 2**: Descrição geral do sistema  
-&nbsp;• **Seção 3**: Requisitos funcionais (casos de uso)  
-&nbsp;• **Seção 4**: Requisitos não funcionais  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Seção 2**: Descrição geral do sistema  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Seção 3**: Requisitos funcionais (casos de uso)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Seção 4**: Requisitos não funcionais  
 
 ---
 
@@ -37,36 +37,36 @@ Este documento detalha os requisitos do aplicativo **FitTribe**, oferecendo aos 
 
 O aplicativo FitTribe oferece uma solução moderna para organização de eventos esportivos como corridas e ciclismo. Destaques:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• 🗺️ Mapa com rota e localização em tempo real  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• 💬 Comunicação direta entre participantes e organizadores  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• 🤝 Facilitação de encontros e conexões esportivas  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**•** 🗺️ Mapa com rota e localização em tempo real  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**•** 💬 Comunicação direta entre participantes e organizadores  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**•** 🤝 Facilitação de encontros e conexões esportivas  
 
 ---
 
 ## ✅ Requisitos Funcionais
 
 ### 🔐 Cadastro & Autenticação
-&nbsp;&nbsp;&nbsp;&nbsp;• Cadastro de usuário ☑️  
-&nbsp;&nbsp;&nbsp;&nbsp;• Login ☑️  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**•** Cadastro de usuário ☑️  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**•** Login ☑️  
 
 ### 🧠 Histórico e Reutilização
-&nbsp;&nbsp;&nbsp;&nbsp;• Histórico do usuário 🔶  
-&nbsp;&nbsp;&nbsp;&nbsp;• Reutilização de eventos 🟢  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**•** Histórico do usuário 🔶  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**•** Reutilização de eventos 🟢  
 
 ### 🗺️ Mapa e Modalidades
-&nbsp;&nbsp;&nbsp;&nbsp;• Mapa Interativo ☑️  
-&nbsp;&nbsp;&nbsp;&nbsp;• Filtro por modalidade (Corrida, Ciclismo, Geral) ☑️  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**•** Mapa Interativo ☑️  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**•** Filtro por modalidade (Corrida, Ciclismo, Geral) ☑️  
 
 ### 💬 Comunicação
-&nbsp;&nbsp;&nbsp;&nbsp;• Chat em grupo ☑️  
-&nbsp;&nbsp;&nbsp;&nbsp;• Chat privado ☑️  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**•** Chat em grupo ☑️  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**•** Chat privado ☑️  
 
 ### 📅 Eventos e Calendário
-&nbsp;&nbsp;&nbsp;&nbsp;• Criação e gerenciamento de eventos ☑️  
-&nbsp;&nbsp;&nbsp;&nbsp;• Calendário de eventos 🔶  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**•** Criação e gerenciamento de eventos ☑️  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**•** Calendário de eventos 🔶  
 
 ### 🌦️ Clima
-&nbsp;&nbsp;&nbsp;&nbsp;• Exibição das condições climáticas ☑️  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**•** Exibição das condições climáticas ☑️  
 
 ---
 
@@ -102,7 +102,7 @@ O aplicativo FitTribe oferece uma solução moderna para organização de evento
 
 ---
 
-## 🧑‍💻 Desenvolvedores
+## 🧑‍💻 Analistas
 
 <p align="center">
   <b>Arthur Levy</b> &nbsp; | &nbsp; <b>Carlos Eduardo</b>
