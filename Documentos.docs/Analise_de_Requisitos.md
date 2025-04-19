@@ -108,7 +108,7 @@ O aplicativo FitTribe oferece uma solução moderna para organização de evento
 <table align="center">
   <tr>
     <td align="center">
-      <a href="https://github.com/cadu321r">
+      <a href="https://github.com/carloseduardo-rocha">
         <img src="https://avatars.githubusercontent.com/u/154270394?v=4" width="100px;" alt="Carlos Eduardo"/><br />
         <img src="https://img.shields.io/static/v1?label=&message=Carlos%20Eduardo&color=1E3A8A&style=for-the-badge&logo=github"/>
       </a>
