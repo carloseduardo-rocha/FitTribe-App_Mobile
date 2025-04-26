@@ -98,9 +98,8 @@ Nossa missão é **conectar atletas e entusiastas** do esporte em um ambiente di
 
 ## 📱 Tecnologias Utilizadas
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **React Native**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Firebase Auth**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Firebase Firestore** 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Expo**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Mapbox**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• **Node.js**
+| 🚀 Tecnologia         | 🚀 Tecnologia         | 🚀 Tecnologia        |
+| --------------------- | --------------------- | -------------------- |
+| ⚛️ React Native       | 🔥 Firebase Auth       | 🔥 Firebase Firestore |
+| 📱 Expo               | 🗺️ Mapbox             | 🖥️ Node.js           |
+
