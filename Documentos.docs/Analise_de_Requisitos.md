@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="FitTribe-logo-Img.png" alt="Logo do Projeto FitTribe" width="250"/>
+  <img src="../assets/logo-FitTribe.png" alt="Logo do Projeto FitTribe" width="250"/>
 </p>
 
 <h1 align="center">Análise de Requisitos - FitTribe</h1>

@@ -1,7 +1,7 @@
 # <p align="center">FitTribe - Aplicativo Mobile para Eventos Esportivos</p>
 
 <p align="center">
-  <img src="FitTribe-logo-Img.png" alt="Logo do Projeto FitTribe" width="250"/>
+  <img src="./assets/logo-FitTribe.png" alt="Logo do Projeto FitTribe" width="250"/>
 </p>
 
 ## 👥 Equipe de Desenvolvimento
