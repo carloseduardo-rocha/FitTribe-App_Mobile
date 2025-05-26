@@ -22,9 +22,8 @@ const FitTribeLoginScreen = ({ navigation }) => {
       return;
     }
     
-    // Simulação de login bem-sucedido
     Alert.alert('Bem-vindo!', 'Login realizado com sucesso');
-    // navigation.navigate('Home'); // Descomente quando tiver a tela Home
+    navigation.navigate('Home');
   };
 
   return (
