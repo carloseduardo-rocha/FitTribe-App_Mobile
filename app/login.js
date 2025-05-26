@@ -1,13 +1,35 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image, SafeAreaView, TextInput, KeyboardAvoidingView, Platform } from 'react-native';
+import { 
+  View, 
+  Text, 
+  StyleSheet, 
+  TouchableOpacity, 
+  Image, 
+  SafeAreaView, 
+  TextInput, 
+  KeyboardAvoidingView, 
+  Platform,
+  Alert
+} from 'react-native';
 
-const FitTribeLoginScreen = () => {
+const FitTribeLoginScreen = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
+  const handleLogin = () => {
+    if (!email || !password) {
+      Alert.alert('Erro', 'Por favor, preencha todos os campos');
+      return;
+    }
+    
+    // Simulação de login bem-sucedido
+    Alert.alert('Bem-vindo!', 'Login realizado com sucesso');
+    // navigation.navigate('Home'); // Descomente quando tiver a tela Home
+  };
+
   return (
     <SafeAreaView style={styles.container}>
-      <KeyboardAvoidingView 
+      <KeyboardAvoidingView
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
         style={styles.keyboardAvoidingView}
       >
@@ -36,17 +58,23 @@ const FitTribeLoginScreen = () => {
             secureTextEntry
           />
           
-          {/* Link Esqueceu a Senha */}
-          <TouchableOpacity style={styles.forgotPasswordButton}>
+          {/* Link "Esqueceu a senha?" */}
+          <TouchableOpacity 
+            style={styles.forgotPasswordButton}
+            onPress={() => navigation.navigate('ForgotPassword')}
+          >
             <Text style={styles.forgotPasswordText}>Esqueceu a senha?</Text>
           </TouchableOpacity>
           
           {/* Botão de Login */}
-          <TouchableOpacity style={styles.loginButton}>
+          <TouchableOpacity 
+            style={styles.loginButton}
+            onPress={handleLogin}
+          >
             <Text style={styles.loginButtonText}>Entrar</Text>
           </TouchableOpacity>
           
-          {/* Divisor */}
+          {/* Divisor "ou" */}
           <View style={styles.dividerContainer}>
             <View style={styles.dividerLine} />
             <Text style={styles.dividerText}>ou</Text>
@@ -54,27 +82,33 @@ const FitTribeLoginScreen = () => {
           </View>
           
           {/* Botão de Login com Google */}
-          <TouchableOpacity style={[styles.button, styles.googleButton]}>
+          <TouchableOpacity 
+            style={[styles.button, styles.googleButton]}
+            onPress={() => Alert.alert('Google', 'Login com Google selecionado')}
+          >
             <Image 
-              source={{uri: 'https://cdn-icons-png.flaticon.com/512/2991/2991148.png'}} 
+              source={{ uri: 'https://cdn-icons-png.flaticon.com/512/2991/2991148.png' }} 
               style={styles.icon}
             />
             <Text style={[styles.buttonText, styles.googleButtonText]}>Entrar com Google</Text>
           </TouchableOpacity>
           
           {/* Botão de Login com Facebook */}
-          <TouchableOpacity style={[styles.button, styles.facebookButton]}>
+          <TouchableOpacity 
+            style={[styles.button, styles.facebookButton]}
+            onPress={() => Alert.alert('Facebook', 'Login com Facebook selecionado')}
+          >
             <Image 
-              source={{uri: 'https://cdn-icons-png.flaticon.com/512/124/124010.png'}} 
+              source={{ uri: 'https://cdn-icons-png.flaticon.com/512/124/124010.png' }} 
               style={styles.icon}
             />
             <Text style={[styles.buttonText, styles.facebookButtonText]}>Entrar com Facebook</Text>
           </TouchableOpacity>
           
-          {/* Link Primeiro Acesso */}
+          {/* Link para Cadastro */}
           <View style={styles.signupContainer}>
             <Text style={styles.signupText}>Não tem uma conta? </Text>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
               <Text style={styles.signupLink}>Cadastre-se</Text>
             </TouchableOpacity>
           </View>

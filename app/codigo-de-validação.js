@@ -7,10 +7,8 @@ const VerificationCodeScreen = ({ navigation, route }) => {
   const [countdown, setCountdown] = useState(30);
   const inputs = useRef([]);
   
-  // Correção: Verificação segura dos parâmetros
   const email = route?.params?.email || 'seu-email@exemplo.com';
 
-  // Efeito para o countdown do reenvio
   useEffect(() => {
     if (countdown > 0 && !resendAvailable) {
       const timer = setTimeout(() => setCountdown(countdown - 1), 1000);
@@ -44,8 +42,7 @@ const VerificationCodeScreen = ({ navigation, route }) => {
     const fullCode = code.join('');
     if (fullCode.length === 6) {
       alert(`Código ${fullCode} verificado!`);
-      // Navegação segura
-      navigation?.navigate('ResetPassword', { code: fullCode });
+      navigation.navigate('ResetPassword', { code: fullCode });  // Navega para Nova Senha com o código
     } else {
       alert('Por favor, preencha todos os dígitos do código');
     }
@@ -105,7 +102,6 @@ const VerificationCodeScreen = ({ navigation, route }) => {
   );
 };
 
-// Estilos permanecem os mesmos do código anterior
 const styles = StyleSheet.create({
   container: {
     flex: 1,

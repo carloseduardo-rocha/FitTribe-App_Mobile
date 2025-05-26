@@ -13,7 +13,7 @@ import {
   Alert
 } from 'react-native';
 
-export default function SignupScreen({ goToLogin }) {
+export default function SignupScreen({ navigation }) {  // Substitui goToLogin por navigation
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
   const [birthDate, setBirthDate] = useState(null);
@@ -51,7 +51,7 @@ export default function SignupScreen({ goToLogin }) {
     }
     
     Alert.alert('Sucesso', 'Cadastro realizado com sucesso!');
-    goToLogin();
+    navigation.navigate('Login');  // Navega para Login ao invés de goToLogin()
   };
 
   return (

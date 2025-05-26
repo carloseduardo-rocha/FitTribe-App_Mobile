@@ -20,14 +20,12 @@ const ForgotPasswordScreen = ({ navigation }) => {
       alert('Por favor, insira um e-mail válido');
       return;
     }
-    // Lógica para enviar código de verificação
     alert(`Código enviado para: ${email}`);
-    // Navegar para tela de verificação de código
-    // navigation.navigate('VerificationCode');
+    navigation.navigate('VerificationCode', { email });  // Navega para Código de Verificação com o email
   };
 
   const handleCancel = () => {
-    navigation.goBack();
+    navigation.goBack();  // Volta para a tela anterior (Login)
   };
 
   return (
@@ -37,18 +35,12 @@ const ForgotPasswordScreen = ({ navigation }) => {
         style={styles.keyboardAvoidingView}
       >
         <View style={styles.content}>
-          {/* Cabeçalho */}
           <Text style={styles.title}>FitTribe</Text>
-          
-          {/* Subtítulo */}
           <Text style={styles.subtitle}>Não lembra a senha?</Text>
-          
-          {/* Descrição */}
           <Text style={styles.description}>
             Por favor insira seu e-mail para enviarmos um código de verificação
           </Text>
           
-          {/* Campo de Email */}
           <TextInput
             style={styles.input}
             placeholder="Email"
@@ -59,7 +51,6 @@ const ForgotPasswordScreen = ({ navigation }) => {
             autoCapitalize="none"
           />
           
-          {/* Botões */}
           <View style={styles.buttonsContainer}>
             <TouchableOpacity 
               style={[styles.button, styles.sendButton, !emailValid && styles.disabledButton]}
@@ -77,7 +68,6 @@ const ForgotPasswordScreen = ({ navigation }) => {
             </TouchableOpacity>
           </View>
           
-          {/* Termos legais */}
           <Text style={styles.legalText}>Terms & Conditions Apply*</Text>
         </View>
       </KeyboardAvoidingView>
@@ -101,7 +91,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 28,
     fontWeight: 'bold',
-    color: '#FF6B6B', // Cor do logo FitTribe
+    color: '#FF6B6B',
     textAlign: 'center',
     marginBottom: 20,
   },

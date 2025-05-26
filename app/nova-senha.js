@@ -8,7 +8,6 @@ const ResetPasswordScreen = ({ navigation }) => {
   const [passwordsMatch, setPasswordsMatch] = useState(false);
 
   const validatePassword = (password) => {
-    // Validação: mínimo 8 caracteres, pelo menos 1 letra e 1 número
     const re = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
     return re.test(password);
   };
@@ -34,9 +33,8 @@ const ResetPasswordScreen = ({ navigation }) => {
       return;
     }
     
-    // Lógica para redefinir a senha
     alert('Senha redefinida com sucesso!');
-    navigation.navigate('Login');
+    navigation.navigate('Login');  // Navega de volta para Login
   };
 
   return (
@@ -46,13 +44,9 @@ const ResetPasswordScreen = ({ navigation }) => {
         style={styles.keyboardAvoidingView}
       >
         <View style={styles.content}>
-          {/* Cabeçalho */}
           <Text style={styles.logo}>FitTribe</Text>
-          
-          {/* Título */}
           <Text style={styles.title}>Crie sua nova senha!</Text>
           
-          {/* Campo Nova Senha */}
           <TextInput
             style={styles.input}
             placeholder="Nova senha"
@@ -63,10 +57,8 @@ const ResetPasswordScreen = ({ navigation }) => {
             autoCapitalize="none"
           />
           
-          {/* Exemplo de senha segura */}
           <Text style={styles.passwordExample}>Ex: Pet.Journal@1d3d456789</Text>
           
-          {/* Campo Confirmar Senha */}
           <TextInput
             style={styles.input}
             placeholder="Confirmar Senha"
@@ -77,17 +69,14 @@ const ResetPasswordScreen = ({ navigation }) => {
             autoCapitalize="none"
           />
           
-          {/* Mensagem de erro */}
           {newPassword && confirmPassword && !passwordsMatch && (
             <Text style={styles.errorText}>As senhas estão diferentes, verifique</Text>
           )}
           
-          {/* Informação adicional */}
           <Text style={styles.infoText}>
             É necessário que todos os dispositivos acessem sua conta com a nova senha
           </Text>
           
-          {/* Botão de Redefinir */}
           <TouchableOpacity 
             style={[
               styles.resetButton,
