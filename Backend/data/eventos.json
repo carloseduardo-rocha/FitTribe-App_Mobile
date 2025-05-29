@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "nome": "Corrida de Rua Fortaleza",
+    "data": "2025-06-10",
+    "local": "Avenida Beira Mar"
+  },
+  {
+    "id": 2,
+    "nome": "Desafio MTB Serra",
+    "data": "2025-06-20",
+    "local": "Serra da Aratanha"
+  }
+]
