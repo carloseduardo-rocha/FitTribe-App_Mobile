@@ -6,6 +6,54 @@
 
 ---
 
+## ✨ Visão Geral
+
+O **FitTribe** é um aplicativo mobile moderno, desenvolvido para facilitar a **organização e participação em eventos esportivos**, com foco em modalidades como corrida e ciclismo. A proposta é conectar atletas, amadores e organizadores em uma plataforma acessível, segura e visualmente atraente.
+
+Nosso objetivo é promover um ambiente digital onde os usuários possam **descobrir eventos**, se **inscrever com facilidade**, **interagir com outros participantes** e **acompanhar suas conquistas esportivas**.
+
+---
+
+## 🚀 Funcionalidades já implementadas
+
+| Módulo                 | Descrição                                                | Status            |
+|------------------------|------------------------------------------------------------|-------------------|
+| **Boas-vindas**        | Tela inicial com visual moderno e mensagem de entrada     | ✔️ Concluído       |
+| **Autenticação**       | Login com botão de contato e autenticação básica          | ✔️ Concluído       |
+| **Mapa Interativo**    | Visualização geográfica dos eventos                       | ✔️ Concluído       |
+| **Lista de Eventos**   | Listagem de eventos com título, data e local              | ✔️ Concluído       |
+| **Detalhes do Evento** | Informações detalhadas de cada evento                     | ✔️ Concluído       |
+| **Navegação**          | Transições fluídas entre telas                            | ✔️ Concluído       |
+
+### 🔜 Próximas funcionalidades:
+- Inscrição e confirmação em eventos  
+- Filtro por modalidade e distância  
+- Histórico de participação  
+- Chat entre participantes  
+- Perfil do usuário com estatísticas
+
+---
+
+## 📸 Telas principais
+
+| Boas-vindas | Login |
+|------------|--------|
+| ![Boas-vindas](.//assets/Boas-vindas.png) | ![Login](./assets/Login.png) |
+
+> Veja todas as telas no [Figma do projeto](https://www.figma.com/design/ABWPo8MZ19mHZetOu6WeUq/P.I?node-id=2069-11&t=gIiNGELolFAaCJUS-1)
+
+---
+
+## 📱 Tecnologias Utilizadas
+
+| 🚀 Tecnologia       | 🚀 Tecnologia         | 🚀 Tecnologia          |
+|---------------------|-----------------------|------------------------|
+| ⚛️ React Native     | 🔥 Firebase Auth       | 🔥 Firebase Firestore  |
+| 📱 Expo             | 🗺️ Mapbox              | 🖥️ Node.js             |
+| 🎨 Styled Components| 🧪 React Navigation   | 🌐 Git/GitHub           |
+
+---
+
 ## 👥 Equipe de Desenvolvimento
 
 <table align="center">
@@ -45,62 +93,17 @@
 
 ---
 
-## ✨ Visão Geral
+## 💻 Como rodar o projeto
 
-O **FitTribe** é um aplicativo mobile moderno e intuitivo para **organização e participação em eventos esportivos**, com foco em modalidades como **corrida** e **ciclismo**.
+```bash
+# Clone o repositório
+git clone https://github.com/carloseduardo-rocha/FitTribe-App_Mobile
 
-Nossa missão é **conectar atletas e entusiastas** do esporte em um ambiente digital acessível, funcional e seguro.
+# Acesse o diretório
+cd FitTribe-App_Mobile
 
-### Principais diferenciais:
-- 🗺️ **Mapas interativos com filtros por modalidade**  
-- 💬 **Sistema de comunicação entre usuários**  
-- 📅 **Gestão completa de eventos**  
-- ⚡ **Autenticação segura com múltiplos fatores**  
-- 📊 **Histórico e conquistas esportivas**  
-- 🌦️ **Integração com previsão do tempo**  
-- 🔄 **Reutilização de configurações de eventos anteriores**
+# Instale as dependências
+npm install
 
----
-
-## 🚀 Funcionalidades Principais
-
-| Módulo                 | Descrição                                          | Status                 |
-|-------------------------|----------------------------------------------------|-------------------------|
-| **Autenticação**        | Cadastro seguro e login com múltiplos fatores      | ✔️ Implementado          |
-| **Mapa Interativo**     | Visualização geográfica com filtros por modalidade | 🚧 Em desenvolvimento    |
-| **Gestão de Eventos**   | Criação, edição e participação em eventos          | 🚧 Em desenvolvimento    |
-
----
-
-## 📋 Requisitos
-
-### ✅ Requisitos Funcionais
-
-- **RF01:** Permitir o cadastro e login de usuários  
-- **RF02:** Permitir a criação de eventos esportivos  
-- **RF03:** Exibir eventos em mapa com filtros de modalidade  
-- **RF04:** Notificar usuários sobre eventos próximos  
-- **RF05:** Permitir chat entre participantes de um evento  
-- **RF06:** Exibir histórico de participação do usuário  
-- **RF07:** Permitir o cancelamento de eventos por criadores  
-- **RF08:** Exibir conquistas e estatísticas esportivas  
-
-### ❌ Requisitos Não Funcionais
-
-- **RNF01:** A aplicação deve ser responsiva para dispositivos móveis  
-- **RNF02:** O tempo de resposta do sistema deve ser inferior a 2 segundos  
-- **RNF03:** O sistema deve estar disponível 99% do tempo  
-- **RNF04:** Os dados dos usuários devem ser armazenados com criptografia  
-- **RNF05:** Integração com APIs externas deve ser segura e validada  
-- **RNF06:** O layout deve ser acessível e intuitivo  
-
----
-
-## 📱 Tecnologias Utilizadas
-
-| 🚀 Tecnologia      | 🚀 Tecnologia        | 🚀 Tecnologia        |
-|--------------------|----------------------|----------------------|
-| ⚛️ React Native    | 🔥 Firebase Auth      | 🔥 Firebase Firestore |
-| 📱 Expo            | 🗺️ Mapbox             | 🖥️ Node.js            |
-
----
+# Inicie o projeto
+npx expo start
