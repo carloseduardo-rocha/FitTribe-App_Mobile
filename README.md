@@ -36,9 +36,16 @@ Nosso objetivo é promover um ambiente digital onde os usuários possam **descob
 
 ## 📸 Telas principais
 
-| Boas-vindas | Login |
-|------------|--------|
-| ![Boas-vindas](.//assets/Boas-vindas.png) | ![Login](./assets/Login.png) |
+<table>
+  <tr>
+    <td align="center"><strong>Boas-vindas</strong></td>
+    <td align="center"><strong>Login</strong></td>
+  </tr>
+  <tr>
+    <td><img src="./assets/Boas-vindas.png" width="250"/></td>
+    <td><img src="./assets/Login.png" width="250"/></td>
+  </tr>
+</table>
 
 > Veja todas as telas no [Figma do projeto](https://www.figma.com/design/ABWPo8MZ19mHZetOu6WeUq/P.I?node-id=2069-11&t=gIiNGELolFAaCJUS-1)
 
