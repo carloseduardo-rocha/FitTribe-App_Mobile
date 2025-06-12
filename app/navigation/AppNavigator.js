@@ -6,13 +6,14 @@ import VerificationCodeScreen from '../screens/authentication/codigo-de-validaç
 import ResetPasswordScreen from '../screens/authentication/nova-senha';
 import HomeScreen from '../screens/Home/HomeScreen'; 
 import MapScreen from '../screens/Map/MapScreen';
-import WelcomeScreen from '../screens/Onboarding/WelcomeScreen';
+import OnboardingIndex from '../screens/Onboarding/OnboardingIndex';
 
 const Stack = createNativeStackNavigator();
 
 export default function AppNavigator() {
   return (
-    <Stack.Navigator initialRouteName="WelcomeScreen">
+    <Stack.Navigator initialRouteName="Onboarding">
+      <Stack.Screen name="Onboarding" component={OnboardingIndex} options={{ headerShown: false }} />
       <Stack.Screen name="Login" component={FitTribeLoginScreen} />
       <Stack.Screen name="Signup" component={SignupScreen} />
       <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen} />
@@ -20,7 +21,6 @@ export default function AppNavigator() {
       <Stack.Screen name="ResetPassword" component={ResetPasswordScreen} />
       <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
       <Stack.Screen name="Map" component={MapScreen} />
-      <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 }

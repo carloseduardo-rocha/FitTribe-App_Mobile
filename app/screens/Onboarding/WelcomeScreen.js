@@ -1,15 +1,7 @@
 import React, { useRef, useEffect } from 'react';
-import {
-  View,
-  Text,
-  Image,
-  TouchableOpacity,
-  StyleSheet,
-  Animated,
-  SafeAreaView
-} from 'react-native';
+import { View, Text, Image, TouchableOpacity, StyleSheet, Animated, SafeAreaView,} from 'react-native';
 
-const WelcomeScreen = ({ navigation }) => {
+const WelcomeScreen = ({ onNext }) => {
   const fadeAnim = useRef(new Animated.Value(0)).current;
   const scaleAnim = useRef(new Animated.Value(0.9)).current;
 
@@ -30,20 +22,25 @@ const WelcomeScreen = ({ navigation }) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Image source={require('../assets/logo-fit-tribe.png')} style={styles.icon} />
+      <Image
+        source={require('../assets/logo-fit-tribe.png')}
+        style={styles.icon}
+      />
 
-      {/* Nome do app */}
       <Text style={styles.logo}>
         <Text style={styles.logoWhite}>Fit</Text>
         <Text style={styles.logoRed}>Tribe</Text>
       </Text>
 
-      {/* Subtítulo */}
       <Text style={styles.subtitle}>Venha nos conhecer!</Text>
 
-      {/* Botão animado */}
-      <Animated.View style={{ opacity: fadeAnim, transform: [{ scale: scaleAnim }] }}>
-        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Login')}>
+      <Animated.View
+        style={{ opacity: fadeAnim, transform: [{ scale: scaleAnim }] }}
+      >
+        <TouchableOpacity style={styles.button} onPress={() => {
+          console.log("Botão apertado");
+            onNext();
+        }}>
           <Text style={styles.buttonText}>Começar</Text>
         </TouchableOpacity>
       </Animated.View>
