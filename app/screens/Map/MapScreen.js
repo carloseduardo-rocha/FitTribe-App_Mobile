@@ -13,7 +13,7 @@ const MapScreen = () => {
   return (
     <View style={styles.container}>
       <MapView
-        provider={PROVIDER_DEFAULT} // Usa o OSM no Android, no iOS pode precisar de ajustes
+        provider={PROVIDER_DEFAULT}
         style={styles.map}
         initialRegion={initialRegion}
         customMapStyle={[]}

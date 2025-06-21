@@ -4,7 +4,7 @@ import SignupScreen from '../screens/authentication/cadastro';
 import ForgotPasswordScreen from '../screens/authentication/esqueceu-senha';
 import VerificationCodeScreen from '../screens/authentication/codigo-de-validação';
 import ResetPasswordScreen from '../screens/authentication/nova-senha';
-import HomeScreen from '../screens/Home/HomeScreen'; 
+import HomeScreen from '../screens/Home/HomeScreen';
 import MapScreen from '../screens/Map/MapScreen';
 import OnboardingIndex from '../screens/Onboarding/OnboardingIndex';
 
@@ -12,7 +12,7 @@ const Stack = createNativeStackNavigator();
 
 export default function AppNavigator() {
   return (
-    <Stack.Navigator initialRouteName="Onboarding">
+    <Stack.Navigator initialRouteName="Home">
       <Stack.Screen name="Onboarding" component={OnboardingIndex} options={{ headerShown: false }} />
       <Stack.Screen name="Login" component={FitTribeLoginScreen} />
       <Stack.Screen name="Signup" component={SignupScreen} />

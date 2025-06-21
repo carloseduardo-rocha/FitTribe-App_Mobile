@@ -1,9 +1,10 @@
 import React, { useRef, useEffect } from 'react';
-import { View, Text, Image, TouchableOpacity, StyleSheet, Animated, SafeAreaView,} from 'react-native';
+import { View, Text, Image, TouchableOpacity, StyleSheet, Animated, SafeAreaView } from 'react-native';
 
 const WelcomeScreen = ({ onNext }) => {
   const fadeAnim = useRef(new Animated.Value(0)).current;
-  const scaleAnim = useRef(new Animated.Value(0.9)).current;
+  const scaleAnim = useRef(new Animated.Value(0.8)).current; // Alterado de 0.9 para 0.8 para um efeito mais perceptível
+  const slideAnim = useRef(new Animated.Value(20)).current; // Novo efeito de deslize
 
   useEffect(() => {
     Animated.parallel([
@@ -14,7 +15,12 @@ const WelcomeScreen = ({ onNext }) => {
       }),
       Animated.spring(scaleAnim, {
         toValue: 1,
-        friction: 5,
+        friction: 4, // Ajustado para um efeito mais suave
+        useNativeDriver: true,
+      }),
+      Animated.timing(slideAnim, {
+        toValue: 0,
+        duration: 800,
         useNativeDriver: true,
       }),
     ]).start();
@@ -22,25 +28,38 @@ const WelcomeScreen = ({ onNext }) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Image
-        source={require('../assets/logo-fit-tribe.png')}
-        style={styles.icon}
-      />
+      <Animated.View 
+        style={{ 
+          opacity: fadeAnim,
+          transform: [{ scale: scaleAnim }, { translateY: slideAnim }]
+        }}
+      >
+        <Image
+          source={require('../assets/logo-fit-tribe.png')}
+          style={styles.icon}
+        />
 
-      <Text style={styles.logo}>
-        <Text style={styles.logoWhite}>Fit</Text>
-        <Text style={styles.logoRed}>Tribe</Text>
-      </Text>
+        <Text style={styles.logo}>
+          <Text style={styles.logoWhite}>Fit</Text>
+          <Text style={styles.logoRed}>Tribe</Text>
+        </Text>
 
-      <Text style={styles.subtitle}>Venha nos conhecer!</Text>
+        <Text style={styles.subtitle}>Venha nos conhecer!</Text>
+      </Animated.View>
 
       <Animated.View
-        style={{ opacity: fadeAnim, transform: [{ scale: scaleAnim }] }}
+        style={{ 
+          opacity: fadeAnim,
+          transform: [{ scale: scaleAnim }],
+          width: '100%',
+          alignItems: 'center'
+        }}
       >
-        <TouchableOpacity style={styles.button} onPress={() => {
-          console.log("Botão apertado");
-            onNext();
-        }}>
+        <TouchableOpacity 
+          style={styles.button} 
+          onPress={onNext}
+          activeOpacity={0.7}
+        >
           <Text style={styles.buttonText}>Começar</Text>
         </TouchableOpacity>
       </Animated.View>
@@ -66,6 +85,7 @@ const styles = StyleSheet.create({
     fontSize: 38,
     fontWeight: 'bold',
     marginBottom: 10,
+    textAlign: 'center',
   },
   logoWhite: {
     color: '#fff',
@@ -77,12 +97,23 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#aaa',
     marginBottom: 50,
+    textAlign: 'center',
   },
   button: {
     backgroundColor: '#FF6F61',
     paddingVertical: 14,
     paddingHorizontal: 40,
     borderRadius: 30,
+    width: '80%',
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
   },
   buttonText: {
     color: '#fff',

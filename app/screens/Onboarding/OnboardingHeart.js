@@ -1,9 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
-import { ProgressBar } from 'react-native-paper';
 
-// Mudei o nome do componente para OnboardingHeart (era "App")
 export default function OnboardingHeart({ onNext, onBack }) {
   return (
     <View style={styles.container}>
@@ -35,18 +33,18 @@ export default function OnboardingHeart({ onNext, onBack }) {
 
       <Text style={styles.subtitle}>SEU CORPO É SEU MELHOR EQUIPAMENTO</Text>
 
-      {/* Navegação - ADICIONEI onNext e onBack */}
+      {/* Navegação */}
       <View style={styles.navigation}>
         <TouchableOpacity onPress={onBack}>
           <Text style={styles.navText}>‹ Voltar</Text>
         </TouchableOpacity>
-        
+
         <View style={styles.dots}>
           <View style={styles.dot} />
           <View style={styles.dot} />
           <View style={[styles.dot, styles.activeDot]} />
         </View>
-        
+
         <TouchableOpacity onPress={onNext}>
           <Text style={styles.navText}>Ir para Login ›</Text>
         </TouchableOpacity>
@@ -55,7 +53,7 @@ export default function OnboardingHeart({ onNext, onBack }) {
   );
 }
 
-// Componente HealthStat (mantido igual)
+// Componente HealthStat com barra de progresso simulada
 function HealthStat({ value, label, progress }) {
   return (
     <View style={{ marginBottom: 16 }}>
@@ -63,7 +61,9 @@ function HealthStat({ value, label, progress }) {
         <Text style={styles.statValue}>{value}</Text>
         <Text style={styles.statLabel}>{label}</Text>
       </View>
-      <ProgressBar progress={progress} color="#FF3E6C" style={styles.progressBar} />
+      <View style={styles.progressBar}>
+        <View style={[styles.progressFill, { width: `${progress * 100}%` }]} />
+      </View>
     </View>
   );
 }
@@ -118,6 +118,11 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     backgroundColor: '#333',
     marginTop: 6,
+    overflow: 'hidden',
+  },
+  progressFill: {
+    height: '100%',
+    backgroundColor: '#FF3E6C',
   },
   circleSimulated: {
     alignSelf: 'center',

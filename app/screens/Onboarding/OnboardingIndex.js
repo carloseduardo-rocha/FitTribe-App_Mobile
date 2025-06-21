@@ -8,7 +8,10 @@ export default function OnboardingIndex({ navigation }) {
   const [currentScreen, setCurrentScreen] = useState(0);
 
   const screens = [
-    <WelcomeScreen key="welcome" onNext={() => setCurrentScreen(1)} />,
+    <WelcomeScreen 
+      key="welcome" 
+      onNext={() => setCurrentScreen(1)} 
+    />,
     <OnboardingMap 
       key="map" 
       onNext={() => setCurrentScreen(2)} 
@@ -21,7 +24,7 @@ export default function OnboardingIndex({ navigation }) {
     />,
     <OnboardingHeart
       key="heart"
-      onNext={() => navigation.replace('Login')}
+      onNext={() => navigation.navigate('Login')} // Alterado para navigation.navigate
       onBack={() => setCurrentScreen(2)}
     />
   ];
