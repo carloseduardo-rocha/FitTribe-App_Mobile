@@ -1,34 +1,29 @@
-import { Asset } from 'expo-asset';
 import * as FileSystem from 'expo-file-system';
 import Papa from 'papaparse';
-import { useEffect, useState } from 'react';
 
-export default function LoadEvents() {
-  const [eventos, setEventos] = useState([]);
+// Caminho destino no dispositivo (sandbox)
+const LOCAL_PATH = FileSystem.documentDirectory + 'eventos_corrigidos.csv';
 
-  useEffect(() => {
-    carregarCSV();
-  }, []);
+export async function loadCorridasData() {
+  try {
+    // Copia o arquivo do bundle (assets) para a pasta local
+    await FileSystem.copyAsync({
+      from: FileSystem.asset('assets/eventos_corrigidos.csv'),
+      to: LOCAL_PATH,
+    });
 
-  const carregarCSV = async () => {
-    try {
-      const asset = Asset.fromModule(require('../assets/eventos_corrigidos.csv'));
-      await asset.downloadAsync(); // Garante que o arquivo tá acessível
+    // Lê o arquivo local em seguida
+    const conteudo = await FileSystem.readAsStringAsync(LOCAL_PATH);
 
-      const fileUri = asset.localUri || asset.uri;
-      const conteudo = await FileSystem.readAsStringAsync(fileUri);
+    const resultado = Papa.parse(conteudo, {
+      header: true,
+      skipEmptyLines: true,
+    });
 
-      const resultado = Papa.parse(conteudo, {
-        header: true,
-        skipEmptyLines: true,
-      });
-
-      setEventos(resultado.data);
-      console.log('🎯 Dados carregados:', resultado.data);
-    } catch (error) {
-      console.error('❌ Erro ao carregar CSV:', error);
-    }
-  };
-
-  return null; // Aqui depois tu pode renderizar os eventos no mapa
+    console.log('🎯 Dados CSV (PLANO B):', resultado.data);
+    return resultado.data;
+  } catch (err) {
+    console.error('❌ Falha no Plano B ao carregar CSV:', err);
+    return [];
+  }
 }
