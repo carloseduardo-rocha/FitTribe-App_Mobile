@@ -19,6 +19,7 @@
     "expo-auth-session": "~6.1.5",
     "expo-status-bar": "~2.2.3",
     "expo-web-browser": "~14.1.6",
+    "papaparse": "^5.5.3",
     "puppeteer": "^24.9.0",
     "react": "19.0.0",
     "react-native": "0.79.2",

@@ -21,9 +21,27 @@ const FitTribeLoginScreen = ({ navigation }) => {
       Alert.alert('Erro', 'Por favor, preencha todos os campos');
       return;
     }
-    
-    Alert.alert('Bem-vindo!', 'Login realizado com sucesso');
-    navigation.navigate('Home');
+
+    fetch('http://192.168.3.10:3000/auth/signin', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email,
+        password
+      })
+    })
+    .then(res => res.json())
+    .then(data => {
+      if (data.error) {
+        Alert.alert('Erro', data.error);
+      } else {
+        Alert.alert('Bem-vindo!', 'Login realizado com sucesso');
+        navigation.navigate('Home');
+      }
+    })
+    .catch(() => {
+      Alert.alert('Erro', 'Não foi possível conectar ao servidor.');
+    });
   };
 
   return (
@@ -33,10 +51,8 @@ const FitTribeLoginScreen = ({ navigation }) => {
         style={styles.keyboardAvoidingView}
       >
         <View style={styles.content}>
-          {/* Logo */}
           <Text style={styles.logo}>FitTribe</Text>
-          
-          {/* Campo de Email */}
+
           <TextInput
             style={styles.input}
             placeholder="Email"
@@ -46,8 +62,7 @@ const FitTribeLoginScreen = ({ navigation }) => {
             keyboardType="email-address"
             autoCapitalize="none"
           />
-          
-          {/* Campo de Senha */}
+
           <TextInput
             style={styles.input}
             placeholder="Senha"
@@ -56,31 +71,27 @@ const FitTribeLoginScreen = ({ navigation }) => {
             onChangeText={setPassword}
             secureTextEntry
           />
-          
-          {/* Link "Esqueceu a senha?" */}
+
           <TouchableOpacity 
             style={styles.forgotPasswordButton}
             onPress={() => navigation.navigate('ForgotPassword')}
           >
             <Text style={styles.forgotPasswordText}>Esqueceu a senha?</Text>
           </TouchableOpacity>
-          
-          {/* Botão de Login */}
+
           <TouchableOpacity 
             style={styles.loginButton}
             onPress={handleLogin}
           >
             <Text style={styles.loginButtonText}>Entrar</Text>
           </TouchableOpacity>
-          
-          {/* Divisor "ou" */}
+
           <View style={styles.dividerContainer}>
             <View style={styles.dividerLine} />
             <Text style={styles.dividerText}>ou</Text>
             <View style={styles.dividerLine} />
           </View>
-          
-          {/* Botão de Login com Google */}
+
           <TouchableOpacity 
             style={[styles.button, styles.googleButton]}
             onPress={() => Alert.alert('Google', 'Login com Google selecionado')}
@@ -91,8 +102,7 @@ const FitTribeLoginScreen = ({ navigation }) => {
             />
             <Text style={[styles.buttonText, styles.googleButtonText]}>Entrar com Google</Text>
           </TouchableOpacity>
-          
-          {/* Botão de Login com Facebook */}
+
           <TouchableOpacity 
             style={[styles.button, styles.facebookButton]}
             onPress={() => Alert.alert('Facebook', 'Login com Facebook selecionado')}
@@ -103,8 +113,7 @@ const FitTribeLoginScreen = ({ navigation }) => {
             />
             <Text style={[styles.buttonText, styles.facebookButtonText]}>Entrar com Facebook</Text>
           </TouchableOpacity>
-          
-          {/* Link para Cadastro */}
+
           <View style={styles.signupContainer}>
             <Text style={styles.signupText}>Não tem uma conta? </Text>
             <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
@@ -231,4 +240,5 @@ const styles = StyleSheet.create({
     fontWeight: '500',
   },
 });
+
 export default FitTribeLoginScreen;

@@ -13,7 +13,7 @@ import {
   Alert
 } from 'react-native';
 
-export default function SignupScreen({ navigation }) {  // Substitui goToLogin por navigation
+export default function SignupScreen({ navigation }) {
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
   const [birthDate, setBirthDate] = useState(null);
@@ -49,9 +49,28 @@ export default function SignupScreen({ navigation }) {  // Substitui goToLogin p
       Alert.alert('Erro', 'Por favor, preencha todos os campos corretamente');
       return;
     }
-    
-    Alert.alert('Sucesso', 'Cadastro realizado com sucesso!');
-    navigation.navigate('Login');  // Navega para Login ao invés de goToLogin()
+
+    fetch('http://192.168.3.10:3000/auth/signup', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: username,
+        email,
+        password
+      })
+    })
+    .then(res => res.json())
+    .then(data => {
+      if (data.error) {
+        Alert.alert('Erro', data.error);
+      } else {
+        Alert.alert('Sucesso', 'Cadastro realizado com sucesso!');
+        navigation.navigate('Login');
+      }
+    })
+    .catch(() => {
+      Alert.alert('Erro', 'Não foi possível conectar ao servidor.');
+    });
   };
 
   return (
@@ -62,7 +81,7 @@ export default function SignupScreen({ navigation }) {  // Substitui goToLogin p
       >
         <View style={styles.content}>
           <Text style={styles.logo}>FitTribe</Text>
-          
+
           <View style={styles.inputContainer}>
             <TextInput
               style={styles.input}
@@ -82,7 +101,7 @@ export default function SignupScreen({ navigation }) {  // Substitui goToLogin p
               </Text>
             )}
           </View>
-          
+
           <View style={styles.inputContainer}>
             <TextInput
               style={styles.input}
@@ -102,7 +121,7 @@ export default function SignupScreen({ navigation }) {  // Substitui goToLogin p
               </Text>
             )}
           </View>
-          
+
           <TouchableOpacity 
             style={styles.input} 
             onPress={() => setShowDateModal(true)}
@@ -111,7 +130,7 @@ export default function SignupScreen({ navigation }) {  // Substitui goToLogin p
               {formatDate(birthDate)}
             </Text>
           </TouchableOpacity>
-          
+
           <Modal
             visible={showDateModal}
             transparent={true}
@@ -132,7 +151,7 @@ export default function SignupScreen({ navigation }) {  // Substitui goToLogin p
               </View>
             </View>
           </Modal>
-          
+
           <TextInput
             style={styles.input}
             placeholder="Senha"
@@ -141,7 +160,7 @@ export default function SignupScreen({ navigation }) {  // Substitui goToLogin p
             onChangeText={setPassword}
             secureTextEntry
           />
-          
+
           <TextInput
             style={styles.input}
             placeholder="Confirmar senha"
@@ -150,7 +169,7 @@ export default function SignupScreen({ navigation }) {  // Substitui goToLogin p
             onChangeText={setConfirmPassword}
             secureTextEntry
           />
-          
+
           {password.length > 0 && confirmPassword.length > 0 && (
             <Text style={[
               styles.validationText,
@@ -159,7 +178,7 @@ export default function SignupScreen({ navigation }) {  // Substitui goToLogin p
               {password === confirmPassword ? 'as senhas são iguais' : 'as senhas não coincidem'}
             </Text>
           )}
-          
+
           <TouchableOpacity 
             style={[
               styles.signupButton,
