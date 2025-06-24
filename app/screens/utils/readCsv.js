@@ -1,32 +1,34 @@
-import * as FileSystem from 'expo-file-system';
 import { Asset } from 'expo-asset';
+import * as FileSystem from 'expo-file-system';
+import Papa from 'papaparse';
+import { useEffect, useState } from 'react';
 
-export const loadCorridasData = async () => {
-  try {
-    const asset = Asset.fromModule(require('../../assets/corridas_ce.csv'));
-    await asset.downloadAsync();
+export default function LoadEvents() {
+  const [eventos, setEventos] = useState([]);
 
-    const fileUri = asset.localUri || asset.uri;
-    const contents = await FileSystem.readAsStringAsync(fileUri);
+  useEffect(() => {
+    carregarCSV();
+  }, []);
 
-    console.log('📄 CSV LIDO (100 primeiros chars):', contents.slice(0, 100));
+  const carregarCSV = async () => {
+    try {
+      const asset = Asset.fromModule(require('../assets/eventos_corrigidos.csv'));
+      await asset.downloadAsync(); // Garante que o arquivo tá acessível
 
-    const linhas = contents.split(/\r?\n/).filter(Boolean);
-    const headers = linhas[0].split(',').map(h => h.trim());
+      const fileUri = asset.localUri || asset.uri;
+      const conteudo = await FileSystem.readAsStringAsync(fileUri);
 
-    const eventos = linhas.slice(1).map((linha) => {
-      const colunas = linha.split(',').map(c => c.trim());
-      const evento = {};
-      headers.forEach((header, index) => {
-        evento[header] = colunas[index] || '';
+      const resultado = Papa.parse(conteudo, {
+        header: true,
+        skipEmptyLines: true,
       });
-      return evento;
-    });
 
-    console.log('✅ Eventos carregados:', eventos.length);
-    return eventos;
-  } catch (error) {
-    console.error('❌ Erro ao carregar CSV:', error);
-    return [];
-  }
-};
+      setEventos(resultado.data);
+      console.log('🎯 Dados carregados:', resultado.data);
+    } catch (error) {
+      console.error('❌ Erro ao carregar CSV:', error);
+    }
+  };
+
+  return null; // Aqui depois tu pode renderizar os eventos no mapa
+}

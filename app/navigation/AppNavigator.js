@@ -12,7 +12,7 @@ const Stack = createNativeStackNavigator();
 
 export default function AppNavigator() {
   return (
-    <Stack.Navigator initialRouteName="Home">
+    <Stack.Navigator initialRouteName="Onboarding">
       <Stack.Screen name="Onboarding" component={OnboardingIndex} options={{ headerShown: false }} />
       <Stack.Screen name="Login" component={FitTribeLoginScreen} />
       <Stack.Screen name="Signup" component={SignupScreen} />
