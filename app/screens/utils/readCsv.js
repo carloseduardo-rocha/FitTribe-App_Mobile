@@ -1,29 +1,24 @@
 import * as FileSystem from 'expo-file-system';
+import { Asset } from 'expo-asset';
 import Papa from 'papaparse';
-
-// Caminho destino no dispositivo (sandbox)
-const LOCAL_PATH = FileSystem.documentDirectory + 'eventos_corrigidos.csv';
 
 export async function loadCorridasData() {
   try {
-    // Copia o arquivo do bundle (assets) para a pasta local
-    await FileSystem.copyAsync({
-      from: FileSystem.asset('assets/eventos_corrigidos.csv'),
-      to: LOCAL_PATH,
-    });
+    const asset = Asset.fromModule(require('../assets/eventos_corrigidos.csv'));
+    await asset.downloadAsync(); // Baixa o asset pro cache
 
-    // Lê o arquivo local em seguida
-    const conteudo = await FileSystem.readAsStringAsync(LOCAL_PATH);
+    const fileUri = asset.localUri || asset.uri; // URI válida
+    const conteudo = await FileSystem.readAsStringAsync(fileUri);
 
     const resultado = Papa.parse(conteudo, {
       header: true,
       skipEmptyLines: true,
     });
 
-    console.log('🎯 Dados CSV (PLANO B):', resultado.data);
+    console.log('🎯 Dados CSV:', resultado.data);
     return resultado.data;
   } catch (err) {
-    console.error('❌ Falha no Plano B ao carregar CSV:', err);
+    console.error('❌ Falha ao carregar CSV:', err);
     return [];
   }
 }
