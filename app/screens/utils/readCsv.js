@@ -1,13 +1,14 @@
 import * as FileSystem from 'expo-file-system';
-import { Asset } from 'expo-asset';
 import Papa from 'papaparse';
 
 export async function loadCorridasData() {
   try {
-    const asset = Asset.fromModule(require('../assets/eventos_corrigidos.csv'));
-    await asset.downloadAsync(); // Baixa o asset pro cache
+    const url = 'https://teusite.com/eventos_corrigidos.csv';
+    const fileUri = FileSystem.documentDirectory + 'eventos.csv';
 
-    const fileUri = asset.localUri || asset.uri; // URI válida
+    const downloadResumable = FileSystem.createDownloadResumable(url, fileUri);
+    await downloadResumable.downloadAsync();
+
     const conteudo = await FileSystem.readAsStringAsync(fileUri);
 
     const resultado = Papa.parse(conteudo, {
@@ -15,10 +16,10 @@ export async function loadCorridasData() {
       skipEmptyLines: true,
     });
 
-    console.log('🎯 Dados CSV:', resultado.data);
+    console.log('🎯 Dados baixados:', resultado.data);
     return resultado.data;
   } catch (err) {
-    console.error('❌ Falha ao carregar CSV:', err);
+    console.error('❌ Erro ao baixar CSV:', err);
     return [];
   }
 }
