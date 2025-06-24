@@ -22,6 +22,6 @@ sequelize.sync().then(() => {
   console.error('❌ Erro ao sincronizar o banco:', err);
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Servidor rodando em http://localhost:${PORT}`);
 });

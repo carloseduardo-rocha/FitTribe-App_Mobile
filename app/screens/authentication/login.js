@@ -22,7 +22,7 @@ const FitTribeLoginScreen = ({ navigation }) => {
       return;
     }
 
-    fetch('http://192.168.3.10:3000/auth/signin', {
+    fetch('http://192.168.3.10:3000/auth/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
