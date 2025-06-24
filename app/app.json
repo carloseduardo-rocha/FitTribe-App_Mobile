@@ -25,14 +25,6 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      "expo-web-browser",
-      [
-        "expo-asset",
-        {
-          "assets": ["app/assets/eventos_corrigidos.csv"]
-        }
-      ]
-    ]
+    "plugins": ["expo-web-browser"]
   }
 }
