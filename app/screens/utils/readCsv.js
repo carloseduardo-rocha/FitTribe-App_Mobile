@@ -18,7 +18,13 @@ export async function loadCorridasData() {
       skipEmptyLines: true,
     });
 
-    console.log('🎯 Dados lidos com sucesso:', resultado.data);
+    console.log(`🎯 Total de eventos lidos: ${resultado.data.length}`);
+    if (resultado.data.length > 0) {
+      console.log('👀 Exemplo de evento:', resultado.data[0]);
+    } else {
+      console.log('🎯 Nenhum evento encontrado no CSV.');
+    }
+
     return resultado.data;
   } catch (err) {
     console.error('❌ Erro ao ler o CSV:', err);
