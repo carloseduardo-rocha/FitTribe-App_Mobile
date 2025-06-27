@@ -50,7 +50,7 @@ export default function SignupScreen({ navigation }) {
       return;
     }
 
-    fetch('http://192.168.3.10:3000/auth/signup', {
+    fetch('https://fittribe.acilab.com.br/auth/signup', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
