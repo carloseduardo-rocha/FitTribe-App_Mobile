@@ -6,54 +6,48 @@ import * as ImagePicker from 'expo-image-picker';
 
 const ProfileScreen = ({ user }) => {
   const placeholder = 'https://via.placeholder.com/150';
-  
+
   const [imageUri, setImageUri] = useState(user?.profilePicture || null);
 
-  // Pede permissão para galeria e câmera no Android/iOS
   useEffect(() => {
     (async () => {
       if (Platform.OS !== 'web') {
         const cameraStatus = await ImagePicker.requestCameraPermissionsAsync();
         const mediaStatus = await ImagePicker.requestMediaLibraryPermissionsAsync();
         if (cameraStatus.status !== 'granted' || mediaStatus.status !== 'granted') {
-          Alert.alert('Permissões necessárias', 'Precisamos da permissão para acessar sua câmera e galeria.');
+          Alert.alert('Permissões necessárias', 'Precisamos de permissão para acessar a câmera e a galeria.');
         }
       }
     })();
   }, []);
 
-  // Função para pegar foto da galeria
   const pickImage = async () => {
     try {
-      let result = await ImagePicker.launchImageLibraryAsync({
+      const result = await ImagePicker.launchImageLibraryAsync({
         mediaTypes: ImagePicker.MediaType.Images,
         quality: 1,
       });
       if (!result.canceled) {
         setImageUri(result.assets[0].uri);
-        // Aqui você pode salvar no backend ou banco local depois
       }
     } catch (error) {
       console.log('Erro ao abrir galeria:', error);
     }
   };
 
-  // Função para tirar foto com a câmera
   const takePhoto = async () => {
     try {
-      let result = await ImagePicker.launchCameraAsync({
+      const result = await ImagePicker.launchCameraAsync({
         quality: 1,
       });
       if (!result.canceled) {
         setImageUri(result.assets[0].uri);
-        // Salvar foto depois
       }
     } catch (error) {
       console.log('Erro ao abrir câmera:', error);
     }
   };
 
-  // Menu simples de escolha
   const handleEditPhoto = () => {
     Alert.alert(
       'Editar Foto',
@@ -69,9 +63,9 @@ const ProfileScreen = ({ user }) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.greeting}>Olá, {user?.username || 'Usuário'}!! 👋</Text>
+      <Text style={styles.greeting}>Bem-vindo, {user?.username || 'Atleta'} 👋</Text>
 
-      <TouchableOpacity onPress={handleEditPhoto} activeOpacity={0.7}>
+      <TouchableOpacity onPress={handleEditPhoto} activeOpacity={0.8}>
         <Image
           source={{ uri: imageUri || placeholder }}
           style={styles.profileImage}
@@ -84,7 +78,7 @@ const ProfileScreen = ({ user }) => {
       <TouchableOpacity
         style={styles.editButton}
         onPress={handleEditPhoto}
-        activeOpacity={0.7}
+        activeOpacity={0.8}
       >
         <Text style={styles.editButtonText}>Editar Perfil</Text>
       </TouchableOpacity>
@@ -98,12 +92,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: 30,
-    backgroundColor: '#fff',
+    backgroundColor: '#000', // Fundo preto, estilo FitTribe
   },
   greeting: {
-    fontSize: 24,
-    fontWeight: '700',
-    color: '#4CAF50',
+    fontSize: 22,
+    fontWeight: '600',
+    color: '#fff',
     marginBottom: 25,
   },
   profileImage: {
@@ -111,30 +105,30 @@ const styles = StyleSheet.create({
     height: 160,
     borderRadius: 80,
     marginBottom: 25,
-    borderWidth: 2,
-    borderColor: '#4CAF50',
+    borderWidth: 3,
+    borderColor: '#E10600', // Vermelho do FitTribe
   },
   name: {
     fontSize: 26,
     fontWeight: '700',
-    color: '#222',
+    color: '#fff',
     marginBottom: 8,
   },
   email: {
-    fontSize: 18,
-    color: 'gray',
+    fontSize: 16,
+    color: '#aaa',
     marginBottom: 30,
   },
   editButton: {
-    backgroundColor: '#4CAF50',
+    backgroundColor: '#E10600',
     paddingVertical: 14,
-    paddingHorizontal: 40,
-    borderRadius: 30,
-    shadowColor: '#000',
+    paddingHorizontal: 50,
+    borderRadius: 25,
+    shadowColor: '#E10600',
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
+    shadowOpacity: 0.4,
+    shadowRadius: 4,
+    elevation: 6,
   },
   editButtonText: {
     color: '#fff',
